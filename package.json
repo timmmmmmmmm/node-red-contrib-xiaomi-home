@@ -13,5 +13,13 @@
       "xiaomi-home": "xiaomi-home.js"
     }
   },
-  "author": "Tim van der Heide"
+  "repository" : {
+  	  "type" : "git",
+      "url" : "git+https://github.com/timmmmmmmmm/node-red-contrib-xiaomi-home.git"
+  },
+  "author": "Tim van der Heide",
+  "bugs": {
+    "url": "https://github.com/timmmmmmmmm/node-red-contrib-xiaomi-home/issues"
+  },
+  "homepage": "https://github.com/timmmmmmmmm/node-red-contrib-xiaomi-home#readme",
 }
