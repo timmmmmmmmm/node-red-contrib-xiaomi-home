@@ -20,6 +20,13 @@ You need to [enable LAN mode in the gateway unit](https://www.domoticz.com/wiki/
 
 There's no further configuration required on the Node.js/Node-red side.
 
+## Install
+
+```
+cd ~\.node-red
+npm install node-red-contrib-xiaomi-home
+```
+
 ## Usage
 In the current version there's only one Xiaomi Smart Home node to expose all the Xiaomi events found on the network. The node outputs a msg.payload object with the event (type of sensor), sid (unique identifier of that unit) and the type or on state (the action).
 
