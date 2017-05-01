@@ -12,8 +12,8 @@ This module can be used to receive data from the following sensors:
 
 # Credit
 This code is based on works of:
-*[Karol Danko](https://github.com/quibusus/node-xiaomi-smart-home)
-*[Jonathan Schemoul, HackSpark.fr](https://github.com/jon1012/mihome)
+* [Karol Danko](https://github.com/quibusus/node-xiaomi-smart-home)
+* [Jonathan Schemoul, HackSpark.fr](https://github.com/jon1012/mihome)
 
 # Preperation
 You need to [enable LAN mode in the gateway unit](https://www.domoticz.com/wiki/Xiaomi_Gateway_(Aqara)#Adding_the_Xiaomi_Gateway_to_Domoticz) to be able to receive the data packages on your LAN. Don't bother the MAC/IP addresses and passwords, you won't need them.
@@ -24,3 +24,5 @@ There's no further configuration required on the Node.js/Node-red side.
 In the current version there's only one Xiaomi Smart Home node to expose all the Xiaomi events found on the network. The node outputs a msg.payload object with the event (type of sensor), sid (unique identifier of that unit) and the type or on state (the action).
 
 For now you have to add sid filtering manually after this node.
+
+![Example of the Node's output](https://raw.githubusercontent.com/timmmmmmmmm/node-red-contrib-xiaomi-home/master/node-red-xiaomi-screenshot.png)
