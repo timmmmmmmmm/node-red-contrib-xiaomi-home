@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('xiaomi-home',{
+        category: 'input',
+        color: '#87A980',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:0,
+        outputs:1,
+        icon: "mijia.png",
+        label: function() {
+            return this.name||"Xiaomi Smart Home";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="xiaomi-home">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="xiaomi-home">
+    <p>A node to receive input from the Xiaomi Smart Home kit on the same LAN</p>
+</script>
