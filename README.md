@@ -1,7 +1,7 @@
 # node-red-contrib-xiaomi-home
 A Node-red node to expose the messages sent by the Xiaomi Smart Home accesoires sold under the Mijia brand. This is a Node-red integration of [the Node.js module developed by quibusus](https://github.com/quibusus/node-xiaomi-smart-home)
 
-![Xiaomi smart-home devices](https://raw.githubusercontent.com/timmmmmmmmm/node-red-contrib-xiaomi-home/master/xiaomi.jpg)
+![Xiaomi smart devices and sample output](https://raw.githubusercontent.com/timmmmmmmmm/node-red-contrib-xiaomi-home/master/xiaomi.jpg)
 
 This module can be used to receive data from the following sensors:
 * Temperature/humidity sensor
@@ -25,4 +25,3 @@ In the current version there's only one Xiaomi Smart Home node to expose all the
 
 For now you have to add sid filtering manually after this node.
 
-![Example of the Node's output](https://raw.githubusercontent.com/timmmmmmmmm/node-red-contrib-xiaomi-home/master/node-red-xiaomi-screenshot.png)
