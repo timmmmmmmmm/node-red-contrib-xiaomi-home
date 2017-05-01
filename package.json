@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-xiaomi-home",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A node to receive input from the Xiaomi Smart Home kit on the same LAN",
   "dependencies": {
     "node-xiaomi-smart-home": "^0.1.4"
