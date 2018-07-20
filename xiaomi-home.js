@@ -9,6 +9,15 @@ module.exports = function(RED) {
         RED.nodes.createNode(this,config);
         var node = this;
 
+		//Clean up procedure before re-deploy
+		node.on('close', function(removed, doneFunction) {
+			hub.stop();
+			hub = null;
+			if (typeof doneFunction === 'function')
+				doneFunction();
+			RED.log.info("node-red-contrib-xiaomi-home closing done...");
+		});
+
 		hub.on('data.th', function (sid, temperature, humidity) {
 			var msg = {};
 			msg.title = 'th';
